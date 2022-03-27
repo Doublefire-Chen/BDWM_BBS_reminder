@@ -13,7 +13,7 @@
 1.```BBS_reminder_by_requests.py```为requests实现，无需额外的驱动（推荐使用）  
 2.```BBS_reminder_by_chrome.py```为无头Chrome浏览器实现，需要下载Chrome驱动（方法请自行百度）（不推荐使用）  
 以下以```BBS_reminder_by_requests.py```为例（装包的事儿应该不用我多说了吧，缺啥包就装啥包）  
-打开```BBS_reminder_by_requests.py```文件，将配置区的内容补全，根据需要修改定时运行函数，然后运行即可。  
+打开```BBS_reminder_by_requests.py```文件，将配置区的内容补全，根据需要在函数末尾修改定时运行函数，然后运行即可。  
 ### 关于配置区参数的获取  
 1. ```skey```和```uid```。谷歌浏览器（有开发者工具的浏览器都行）进入BBS https://bbs.pku.edu.cn/v2/mobile/home.php 并登陆，打开开发者工具（快捷键：F12），点击Network如图：  
 ![Image load fail](https://bbs.pku.edu.cn/attach/.thumbnail/eb/90/eb902c4ef5e6a5d5.jpg)  
