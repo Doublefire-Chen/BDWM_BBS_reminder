@@ -14,6 +14,7 @@ global skey,uid,agentid,corpid,corpsecret
 skey="" #填入你的cookie中的skey值
 uid="" #填入你的cookie中的uid值
 corpid = '' #填入你的企业id
+userid = '' #填入你的企业联系人账号（就是你自己的账号）
 agentid =  #填入你的企业应用id（这个不要加引号）
 corpsecret = '' #填入你的企业应用secret
 Big_ten_flag="0" #是否爬十大，是填0，否填1
@@ -120,7 +121,7 @@ def main():
 	    print("微信消息推送成功") #提示性输出
 	    return json.loads(response_send.text)['errmsg'] == 'ok'
 	wechat_message=Big_ten+mail+message
-	send_message_QiYeVX(wechat_message, useridlist = ['ChenYan'])
+	send_message_QiYeVX(wechat_message, useridlist = [userid])
 #定时运行 参考：https://blog.csdn.net/hxxjxw/article/details/121065659
 #定时运行时间可根据需要自行修改
 schedule.every().day.at("07:00").do(main) # 每天7点执行
