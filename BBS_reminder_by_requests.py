@@ -16,12 +16,6 @@ corpid = '' #填入你的企业id
 agentid =  #填入你的企业应用id（这个不要加引号）
 corpsecret = '' #填入你的企业应用secret
 Big_ten_flag="0" #是否爬十大，是填0，否填1
-#定时运行 参考：https://blog.csdn.net/hxxjxw/article/details/121065659
-#定时运行时间可根据需要自行修改
-schedule.every().day.at("07:00").do(main) # 每天7点执行
-schedule.every().day.at("12:00").do(main) # 每天12点执行
-schedule.every().day.at("17:00").do(main) # 每天17点执行
-schedule.every().day.at("21:00").do(main) # 每天21点执行
 ###############################
 Cookie='skey='+skey+';'+'uid='+uid
 header = {
@@ -132,6 +126,11 @@ def main():
 	    return json.loads(response_send.text)['errmsg'] == 'ok'
 	wechat_message=Big_ten+mail+message
 	send_message_QiYeVX(wechat_message, useridlist = [''])
-
+#定时运行 参考：https://blog.csdn.net/hxxjxw/article/details/121065659
+#定时运行时间可根据需要自行修改
+schedule.every().day.at("07:00").do(main) # 每天7点执行
+schedule.every().day.at("12:00").do(main) # 每天12点执行
+schedule.every().day.at("17:00").do(main) # 每天17点执行
+schedule.every().day.at("21:00").do(main) # 每天21点执行
 while True:
     schedule.run_pending() # 运行所有可运行的任务
