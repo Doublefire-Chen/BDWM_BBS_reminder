@@ -20,6 +20,6 @@
 然后刷新网页，点击home.php，如图：  
 ![Image load fail](https://bbs.pku.edu.cn/attach/.thumbnail/8f/8b/8f8b5c0c57d7c4ed.jpg)  
 然后右边的headers一栏下面就是出现cookie和相应的值。  
-2.```corpid,agentid,corpsecret```，请自行前往 https://blog.csdn.net/qq_29300341/article/details/115560813 学习（不是我懒，是人家写的真好，23333），我也是在这里学的（之前用的server酱，免费版一天只能推送5条消息，多的要w，这篇博文教你如何搭建一个免费的server酱，体验上简直一模一样。也不麻烦，由于我之前用server酱的时候就用的企业微信推送，我发现二者的配置操作起来简直一模一样）  
+2.```corpid,userid,agentid,corpsecret```，请自行前往 https://blog.csdn.net/qq_29300341/article/details/115560813 学习（不是我懒，是人家写的真好，23333），我也是在这里学的（之前用的server酱，免费版一天只能推送5条消息，多的要w，这篇博文教你如何搭建一个免费的server酱，体验上简直一模一样。也不麻烦，由于我之前用server酱的时候就用的企业微信推送，我发现二者的配置操作起来简直一模一样）  
 ## 鸣谢  
 感谢三位好兄弟的辅助测试（BBS_id:ddvdv,dysyyds,kangkangcmr）  
